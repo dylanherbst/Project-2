@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom'
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
+import CurrencyBitcoinIcon from '@mui/icons-material/CurrencyBitcoin';
 
 
 export default function NavBar() {
@@ -12,7 +13,7 @@ return (
     <Toolbar>
         <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
             {/* Your site title or logo can go here */}
-            My Site
+            <CurrencyBitcoinIcon style={{ fontSize: 40, marginTop: 10}} /> 
         </Typography>
         <NavLink to="/" style={{ color: 'inherit', textDecoration: 'none', marginRight: '10px' }}>
             Home
