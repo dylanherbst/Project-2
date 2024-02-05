@@ -25,7 +25,7 @@ if (!store.data) return <></>;
     return(
         <div>
         <Box sx={{marginLeft: '30px', marginTop: '30px'}}>
-        <img src={store.data.image.large} />
+        <img src={store.data.image.large} style={{ maxWidth: '100px', height: 'auto' }} />
             <header>
 
               <Typography variant="h4">  {store.data.name} 
@@ -37,7 +37,9 @@ if (!store.data) return <></>;
             <Box sx={{ maxWidth: '1000px', margin: 'auto', display: 'flex', flexWrap: 'wrap', justifyContent: 'center', maxWidth: '1000px', margin: 'auto' }}>
             <Card style={{ margin: '20px' }}>
         <CardContent>
-            {/* Graph */}
+        <Typography style={{ opacity: 0.5 }}>
+      90 Day Forecast
+    </Typography>
             <AreaChart
         width={500}
         height={400}

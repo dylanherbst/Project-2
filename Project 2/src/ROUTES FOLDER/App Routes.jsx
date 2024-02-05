@@ -3,18 +3,19 @@ import HomePage from "../PAGES FOLDER/Home Page";
 import ShowPage from "../PAGES FOLDER/Show Page";
 import LoginForm from "../PAGES FOLDER/Login form Page";
 import ProfilePage from "../PAGES FOLDER/Profile Page";
+import ProtectedRoute  from "./Protected Route";
 
 function AppRoutes(props) {
 
     return (
     <Routes>
         
-    {/* index matches on default/home URL: / */}
-    <Route index element={<HomePage {...props} />} />
-    <Route path="/:id" element={<ShowPage />} />
-    <Route path="/login" element={<LoginForm />} />
-    <Route path="/profile" element={<ProfilePage />} />
+
+    <Route index element={<ProtectedRoute><HomePage {...props} /></ProtectedRoute>} />
+    <Route path="/:id" element={<ProtectedRoute><ShowPage /></ProtectedRoute>} />
+    <Route path="/profile" element={<ProtectedRoute><ProfilePage /></ProtectedRoute>} />
     
+    <Route path="/login" element={<LoginForm />} />
 
     </Routes>
     )

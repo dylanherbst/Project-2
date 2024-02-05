@@ -6,7 +6,7 @@ const theme = createTheme({
     palette: {
       mode: 'light',
       primary: {
-        main: '#1a73e8', // Google Blue
+        main: '#673AB7', // Google Blue '#1a73e8'
       },
       secondary: {
         main: '#fbbc05', // Google Yellow
