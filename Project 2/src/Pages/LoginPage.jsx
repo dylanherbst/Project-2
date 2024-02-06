@@ -77,7 +77,7 @@ function LoginForm() {
                             alignItems: 'center',
                         }}
                     >
-                        <Avatar sx={{ m: 1, bgcolor: '#673AB7' }}>
+                        <Avatar sx={{ m: 1, bgcolor:  '#1a73e8' }}>
                             <LockOutlinedIcon />
                         </Avatar>
                         <Typography component="h1" variant="h5">Sign in</Typography>
@@ -125,9 +125,8 @@ function LoginForm() {
                         type="submit"
                         fullWidth
                         variant="contained"
-                        sx={{ mt: 3, mb: 2,  backgroundColor: '#673AB7', 
-                        '&:hover': {
-                          backgroundColor: '#5c319f' }}}
+                        sx={{ mt: 3, mb: 2,  backgroundColor: '#1a73e8', 
+                      }}
                     >
                         Sign In
                     </Button>
