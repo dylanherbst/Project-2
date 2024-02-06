@@ -3,6 +3,7 @@ import { Container, Box, TextField, Button, Typography, Grid, Link, Checkbox, Fo
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import { useUserContext } from "../Context/UserContext";
 import theme from '../Themes/theme';
+import { useNavigate } from 'react-router-dom';
 
 const defaultTheme = createTheme();
 
@@ -11,6 +12,7 @@ function LoginForm() {
     const [userName, setUserName] = useState('');
     const [userPassword, setUserPassword] = useState('');
     const [submitResult, setSubmitResult] = useState('');
+    const navigate = useNavigate();
 
     const { currentUser, handleUpdateUser, handleLogOut } = useUserContext();
 
@@ -25,8 +27,10 @@ function LoginForm() {
                         handleUpdateUser({ email: userEmail, userName: userName }); 
                     }
                 }
+
     
         if (currentUser && currentUser.email) {
+navigate('/')
             return (
          
                 <Box    sx={{
