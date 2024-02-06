@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { Container, Box, TextField, Button, Typography, Grid, Link, Checkbox, FormControlLabel, Avatar, CssBaseline, ThemeProvider, createTheme } from "@mui/material";
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
-import { useUserContext } from "../CONTEXT FOLDER/UserContext";
-import theme from '../THEMES FOLDER/theme';
+import { useUserContext } from "../Context/UserContext";
+import theme from '../Themes/theme';
 
 const defaultTheme = createTheme();
 

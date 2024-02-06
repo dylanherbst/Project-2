@@ -1,12 +1,12 @@
 import React from "react"
-import HomeStore from "../COMPONENTS FOLDER/HomeComponent"
+import HomeStore from "../Components/HomeComponent"
 import { useEffect } from "react"
 import { Link } from "react-router-dom"
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
-import { useUserContext } from "../CONTEXT FOLDER/UserContext";
-import ShowCoin from "../COMPONENTS FOLDER/ShowCoinComponent";
+import { useUserContext } from "../Context/UserContext";
+import ShowCoin from "../Components/ShowCoinComponent";
 import { useParams } from "react-router-dom";
 import Button from '@mui/material/Button';
 

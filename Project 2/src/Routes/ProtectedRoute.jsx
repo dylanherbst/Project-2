@@ -1,5 +1,5 @@
 import { Outlet, Navigate } from "react-router-dom";
-import { useUserContext } from "../CONTEXT FOLDER/UserContext";
+import { useUserContext } from "../Context/UserContext";
 
 
 function ProtectedRoute({ redirectPath = '/login', children }) {

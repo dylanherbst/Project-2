@@ -1,10 +1,9 @@
 
 import { useEffect} from "react";
-import ShowStore from "../COMPONENTS FOLDER/ShowCoinComponent";
+import ShowStore from "../Components/ShowCoinComponent";
 import { useParams } from "react-router-dom";
 import React, { PureComponent } from 'react';
 import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
-import NavBar from "../COMPONENTS FOLDER/NavBar";
 import { Card, CardContent, Typography, Box } from '@mui/material';
 
 export default function ShowSingleCoin () {

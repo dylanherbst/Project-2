@@ -1,8 +1,8 @@
 import { Route, Routes } from "react-router-dom";
-import HomePage from "../PAGES FOLDER/HomePage";
-import ShowPage from "../PAGES FOLDER/SingleCoinPage";
-import LoginForm from "../PAGES FOLDER/LoginPage";
-import ProfilePage from "../PAGES FOLDER/ProfilePage";
+import HomePage from "../Pages/HomePage";
+import ShowPage from "../Pages/SingleCoinPage";
+import LoginForm from "../Pages/LoginPage";
+import ProfilePage from "../Pages/ProfilePage";
 import ProtectedRoute  from "./ProtectedRoute";
 
 function AppRoutes(props) {
