@@ -1,9 +1,9 @@
 import { Route, Routes } from "react-router-dom";
-import HomePage from "../PAGES FOLDER/Home Page";
-import ShowPage from "../PAGES FOLDER/Show Page";
-import LoginForm from "../PAGES FOLDER/Login form Page";
-import ProfilePage from "../PAGES FOLDER/Profile Page";
-import ProtectedRoute  from "./Protected Route";
+import HomePage from "../PAGES FOLDER/HomePage";
+import ShowPage from "../PAGES FOLDER/SingleCoinPage";
+import LoginForm from "../PAGES FOLDER/LoginPage";
+import ProfilePage from "../PAGES FOLDER/ProfilePage";
+import ProtectedRoute  from "./ProtectedRoute";
 
 function AppRoutes(props) {
 
@@ -22,4 +22,4 @@ function AppRoutes(props) {
     }
     
     export default AppRoutes;
-    // Name this file AppRoutes.jsx and store in new folder 'routes'
+ 

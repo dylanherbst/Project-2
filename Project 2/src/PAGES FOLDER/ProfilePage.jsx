@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useUserContext } from "../CONTEXT FOLODER/user Context";
+import { useUserContext } from "../CONTEXT FOLDER/UserContext";
 import Button from '@mui/material/Button';
 import { Card, CardContent, Typography, Box } from '@mui/material';
 
@@ -14,14 +14,14 @@ export default function ProfilePage () {
         <>
           <Box 
         sx={{
-            height: '100vh', // Full viewport height
+            height: '100vh', 
             display: 'flex',
-            flexDirection: 'column', // Stack children vertically
-            alignItems: 'center', // Center content horizontally
+            flexDirection: 'column', 
+            alignItems: 'center', 
             padding: 0,
             margin: 0,
-            boxSizing: 'border-box', // Include padding and borders
-            // Add any additional styling
+            boxSizing: 'border-box', 
+     
         }}
     >
         <h1>Your Account</h1>
@@ -30,7 +30,7 @@ export default function ProfilePage () {
             <CardContent sx={{
         width: '80%',
         margin: '10px',
-        boxSizing: 'border-box' // Corrected from 'box-sizing' to 'boxSizing'
+        boxSizing: 'border-box' 
     }}>
                     <Typography variant="h7" sx={{ fontWeight: 'bold' }}>
                     <h2>{currentUser.userName}</h2>
@@ -39,7 +39,7 @@ export default function ProfilePage () {
     variant="contained" 
     color="primary" 
     sx={{ marginTop: '20px' }}
-    onClick={() => handleLogOut({})} // Place onClick here
+    onClick={() => handleLogOut({})} 
 >
     Log Out
 </Button>

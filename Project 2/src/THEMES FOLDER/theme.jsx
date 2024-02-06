@@ -34,12 +34,12 @@ const theme = createTheme({
     },
     typography: {
       fontFamily: 'Google Sans, Roboto, Arial, sans-serif', // Google's font
-      // Add other typography customizations here
+    
     },
     shape: {
-      borderRadius: 16, // Google uses slightly rounded edges
+      borderRadius: 16,
     },
-    // Add other theme customizations here
+
   });
 
 export default theme

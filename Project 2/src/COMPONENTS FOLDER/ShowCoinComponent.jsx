@@ -3,7 +3,7 @@ import { create } from 'zustand'
 
 const apiKey = 'CG-aapqN6JHoG5aBVXzKYgGdFKn'; 
 
-const ShowStore = create ((set) =>({
+const ShowCoin = create ((set) =>({
     graphData: [],
     data: null,
 
@@ -12,13 +12,10 @@ const [graphRes, dataRes] = await Promise.all([
     axios.get(`https://api.coingecko.com/api/v3/coins/${id}/market_chart?vs_currency=aud&days=30&x_cg_demo_api_key=${apiKey}`),
     axios.get(`https://api.coingecko.com/api/v3/coins/${id}?localization=false&market_data=true&x_cg_demo_api_key=${apiKey}`)
 
-    // axios.get (
-    //     `https://api.coingecko.com/api/v3/coins/${id}/market_chart?vs_currency=aud&days=30`),
-
+    // API fetch option without key
+    // axios.get ( `https://api.coingecko.com/api/v3/coins/${id}/market_chart?vs_currency=aud&days=30`),
     // axios.get(`https://api.coingecko.com/api/v3/coins/${id}?localization=false&market_data=true`)
 ])
-
-    //  console.log(dataRes)
 
         const graphData = graphRes.data.prices.map((price) => {
             const [time, p] = price;
@@ -37,10 +34,8 @@ const [graphRes, dataRes] = await Promise.all([
             });
 
             set({graphData, data: dataRes.data})
-
-        // console.log('TEST LOG', res.data)
     },
 
 }));
 
-export default ShowStore
+export default ShowCoin
